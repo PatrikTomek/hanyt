@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #63633a;
+  --secondary-color: #3c3d37;
+  --light-color: #ecdfcc;
+  --dark-color: #1e201e;
+}
+
+* {
+  font-family: "Courier Prime", monospace;
+}
+
+section {
+  padding-block: 1rem;
+}
+
+/* HEADER */
+
+.navbar-collapse {
+  justify-content: center;
+
+  .navbar-nav {
+    gap: 1.5rem;
+  }
+}
+
+/* HERO SECTION */
+
+.hero {
+  background-color: var(--primary-color);
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    height: 80vh;
+  }
+}
