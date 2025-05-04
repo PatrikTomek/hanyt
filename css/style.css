@@ -2,18 +2,42 @@
   --primary-color: #63633a;
   --secondary-color: #3c3d37;
   --light-color: #ecdfcc;
-  --dark-color: #1e201e;
+  --dark-color: #0c0c0c;
+  --white-color: #fff;
+
+  --sm-screen: 576px;
+  --md-screen: 768px;
+  --lg-screen: 992px;
+  --xl-screen: 1200px;
+  --xxl-screen: 1400px;
 }
 
 * {
   font-family: "Courier Prime", monospace;
 }
 
-section {
-  padding-block: 1rem;
+section:not(.hero) {
+  padding-block: 4rem;
 }
 
 /* HEADER */
+
+header {
+  background-color: var(--dark-color);
+
+  .navbar-toggler {
+    background-color: var(--light-color);
+  }
+  .navbar a {
+    color: var(--white-color) !important;
+  }
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      padding-block: 1.5rem;
+    }
+  }
+
+}
 
 .navbar-collapse {
   justify-content: center;
@@ -27,13 +51,100 @@ section {
 
 .hero {
   background-color: var(--primary-color);
+  padding-block: 2rem;
 
   .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 2rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2rem;
   }
 
   img {
-    height: 80vh;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
+  p {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+}
+
+/* ABOUT ME SECTION */
+
+.about-me {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .about-me__img-cont {
+    min-width: 30%;
+  }
+}
+.about-me__header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  background-color: var(--dark-color);
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    > div {
+      width: 150px;
+      height: 150px;
+      background-color: var(--light-color);
+
+      @media (min-width: 768px) {
+        width: 200px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+/* CONTACT FORM */
+.contact {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.contact__form {
+  max-width: 650px;
+
+  input,
+  textarea {
+    background-color: var(--white-color);
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-size: 0.7rem;
+  padding-block: 1rem 0.5rem;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 0.8rem;
   }
 }

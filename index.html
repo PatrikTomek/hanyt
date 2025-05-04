@@ -22,7 +22,7 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -43,13 +43,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#about-me">O mně</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#contact">Kontakt</a>
                 </li>
               </ul>
             </div>
@@ -62,11 +62,128 @@
       <section class="hero">
         <div class="container">
           <img src="./img/hero-img_transparent.png" alt="" />
+          <p>
+            Sesame snaps cotton candy pastry chocolate cake oat cake sweet roll
+            croissant liquorice. Pudding brownie candy carrot cake tart brownie
+            shortbread. Dessert gingerbread gummi bears toffee pudding chocolate
+            bar powder sweet roll. Chocolate muffin gummies bonbon sweet roll
+            jelly cookie candy canes marshmallow.
+          </p>
         </div>
+      </section>
+
+      <section id="about-me" class="about-me">
+        <div class="container flex-column flex-md-row">
+          <div>
+            <div class="about-me__header">
+              <h2 class="mb-0">Cupcake ipsum</h2>
+              <span>Oat cake candy croissant</span>
+            </div>
+            <p>
+              Cupcake ipsum dolor sit amet. Cake croissant candy canes tiramisu
+              sesame snaps lollipop shortbread sweet pudding. Dessert jelly-o
+              oat cake bear claw chocolate toffee cake dragée cake. Apple pie
+              muffin topping dessert sesame snaps donut. Pudding chocolate bar
+              caramels cotton candy chupa chups gummies. Lemon drops chocolate
+              bar topping tootsie roll icing bear claw chupa chups cheesecake
+              soufflé. Sweet macaroon cotton candy chocolate bar oat cake
+              chocolate cake wafer cake jelly beans.
+            </p>
+            <p>
+              Biscuit croissant oat cake powder jelly-o cupcake. Muffin
+              marshmallow liquorice pastry apple pie biscuit apple pie cotton
+              candy candy canes. Marzipan pudding cake croissant cake chocolate
+              bar pudding. Muffin caramels gummi bears danish sugar plum pie
+              lemon drops chocolate. Gingerbread muffin shortbread bear claw
+              croissant jelly sesame snaps. Cotton candy lollipop jelly-o cake
+              jelly tiramisu sugar plum. Biscuit chocolate bar muffin tootsie
+              roll cake caramels gummies jujubes.
+            </p>
+          </div>
+          <div class="about-me__img-cont">
+            <img
+              class="img-fluid"
+              src="./img/ChatGPT Image 4. 5. 2025 21_13_36.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio pt-0">
+        <div class="container">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <form
+          class="container contact__form mt-5"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3">
+            <label for="name" class="form-label">Jméno</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Vaše jméno"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="vas@email.cz"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Zpráva</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Vaše zpráva..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="file" class="form-label">Nahrát obrázek</label>
+            <input
+              class="form-control"
+              type="file"
+              id="file"
+              name="file"
+              accept="image/*"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Odeslat</button>
+        </form>
       </section>
     </main>
 
-    <footer>footer</footer>
+    <footer>
+      <!-- Created by
+      <a href="https://patriktomek.cz/" target="_blank">Patrik Tomek</a> -->
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
