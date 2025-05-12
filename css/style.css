@@ -91,6 +91,15 @@ header {
   .about-me__img-cont {
     min-width: 30%;
   }
+
+  h3 {
+    /* margin-top: 2.5rem; */
+    font-size: calc(1.2rem + .6vw);
+  }
+
+  hr {
+    margin-block: 2rem;
+  }
 }
 .about-me__header {
   display: flex;
@@ -106,16 +115,16 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 
     > div {
-      width: 150px;
-      height: 150px;
-      background-color: var(--light-color);
+      width: 240px;
+      height: 175px;
+      border: 1px solid var(--light-color);
 
       @media (min-width: 768px) {
-        width: 200px;
-        height: 300px;
+        width: 440px;
+        height: 320px;
       }
     }
   }
