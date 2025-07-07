@@ -110,24 +110,35 @@ header {
 
 /* PORTFOLIO */
 .portfolio {
-  background-color: var(--dark-color);
+  background-color: var(--primary-color);
+
   .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-
-    > div {
-      width: 240px;
-      height: 175px;
-      border: 1px solid var(--light-color);
-
-      @media (min-width: 768px) {
-        width: 440px;
-        height: 320px;
-      }
-    }
+    flex-direction: column;
+    gap: 4rem;
   }
+  h2 {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    display: inline-block;
+    padding: .5rem 2rem .25rem 1rem;
+    text-transform: uppercase;
+  }
+}
+.portfolio__style-imgs-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.portfolio__img-cont {
+  max-width: 400px;
+  min-height: 300px;
+
+  img {
+  border: 16px solid var(--dark-color);
+}
 }
 
 /* CONTACT FORM */
