@@ -24,7 +24,7 @@ section:not(.hero) {
 
 header {
   background-color: var(--dark-color);
-  
+
   .navbar a {
     color: var(--white-color) !important;
   }
@@ -134,8 +134,16 @@ header {
   min-height: 300px;
 
   img {
-  border: 16px solid var(--dark-color);
-}
+    border: 16px solid var(--dark-color);
+  }
+  
+  @media (max-width: 992px) {
+    width: 46%;
+    min-height: auto;
+    img {
+      border: 8px solid var(--dark-color);
+    }
+  }
 }
 
 /* CONTACT FORM */
