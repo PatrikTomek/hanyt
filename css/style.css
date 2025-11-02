@@ -24,10 +24,7 @@ section:not(.hero) {
 
 header {
   background-color: var(--dark-color);
-
-  .navbar-toggler {
-    background-color: var(--light-color);
-  }
+  
   .navbar a {
     color: var(--white-color) !important;
   }
