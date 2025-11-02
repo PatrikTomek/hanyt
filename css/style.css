@@ -139,7 +139,7 @@ header {
   
   @media (max-width: 992px) {
     width: 46%;
-    min-height: auto;
+    min-height: 128px;
     img {
       border: 8px solid var(--dark-color);
     }
