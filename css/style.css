@@ -157,6 +157,13 @@ header {
   input,
   textarea {
     background-color: var(--white-color);
+    border-radius: 0;
+  }
+
+  button {
+    color: white;
+    border-color: white;
+    border-radius: 0;
   }
 }
 
