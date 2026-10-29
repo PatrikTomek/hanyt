@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -65,7 +66,28 @@
     <main>
       <section class="hero">
         <div class="container">
-          <img src="./img/hero-img1.png" alt="" />
+          <div class="heading_container">
+            <h1>
+              <!-- <div class="heading">Hany T</div> -->
+              <img
+                src="./img/heading.png"
+                alt="Hany T"
+                fetchpriority="high"
+              >
+              <div class="tattoo-title_container">
+                <div class="tattoo-title">
+                  <span>TATTOO</span>
+                </div>
+              </div>
+            </h1>
+            <button class="btn btn-outline-secondary">Rezervovat termín</button>
+          </div>
+          <img
+            src="./img/hero_bg.png"
+            class="hero_img"
+            alt="Tatérka"
+            fetchpriority="high"
+          >
         </div>
       </section>
 
@@ -390,7 +412,7 @@
             />
           </div>
 
-          <button type="submit" class="btn btn-outline-primary">Odeslat</button>
+          <button type="submit" class="btn btn-outline-secondary">Odeslat</button>
         </form>
       </section>
     </main>

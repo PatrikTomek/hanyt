@@ -47,28 +47,93 @@ header {
 /* HERO SECTION */
 
 .hero {
-  background-color: var(--primary-color);
-  padding-block: 2rem;
+  position: relative;
+  min-height: 80vh;
 
   .container {
+    color: var(--white-color);
+  }
+
+  .container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .heading_container {
+    position: absolute;
+    left: 15%;
+    bottom: 25%;
+    max-width: 35rem;
+    text-align: start;
+  }
+
+  .heading {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 9rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--white-color);
+    margin: 0;
+  }
+
+  h1 {
     display: flex;
     flex-direction: column;
+    width: 25rem;
+
+    img {
+      z-index: 1;
+    }
+  }
+
+  .tattoo-title_container {
+    position: relative;
+  }
+
+  .tattoo-title {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 2rem;
-    color: var(--dark-color);
-    font-weight: 600;
-    text-align: center;
-    font-size: 1.2rem;
+    gap: 20px;
   }
 
-  img {
-    max-height: 80vh;
-    object-fit: contain;
+  .tattoo-title::before,
+  .tattoo-title::after {
+      content: "";
+      flex: 1;
+      width: 4rem;
+      max-width: 90px;
+      height: 1px;
+      background-color: var(--white-color);
   }
 
-  p {
-    max-width: 700px;
-    margin-inline: auto;
+  .tattoo-title span {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      letter-spacing: 0.3em;
+  }
+
+  button {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    border-radius: 0;
+    padding: .5rem 2.5rem;
+    font-size: .9rem;
+    margin-top: 1rem;
+  }
+
+  .hero_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
   }
 }
 
